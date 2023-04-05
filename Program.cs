@@ -44,4 +44,19 @@ void arrayCompareLengthOfString(string[] arrayCLOS, string[] arrayShow)
     }
 }
 
+int arraySize = Prompt("Input array size: ");
 
+string[] array = new string[arraySize];
+
+arrayFilling(array);
+arrayCounting(array);
+string[] arrayResult = new string[count];
+arrayCompareLengthOfString(array, arrayResult);
+
+System.Console.Write("New array: ");
+foreach (string ch in arrayResult)
+{
+    System.Console.Write($" / {ch}");
+}
+System.Console.WriteLine(" /");
+System.Console.WriteLine();
